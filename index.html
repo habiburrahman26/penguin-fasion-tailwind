@@ -28,11 +28,18 @@
   <body>
     <header class="p-4 bg-headercolor lg:h-screen mb-16">
       <!-- navigation start -->
-      <nav class="container mx-auto flex justify-between mb-10 pt-4">
+      <nav class="container mx-auto flex justify-between items-center mb-10 pt-4">
         <div>
           <img src="images/logo.png" alt="penguin logo" class="h-8" />
         </div>
-        <ul class="flex items-center space-x-8">
+
+        <!-- menu icon -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 md:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <!-- nav-list -->
+        <ul class="md:flex md:items-center md:space-x-8 hidden">
           <li><a href="#">Home</a></li>
           <li><a href="#">Products</a></li>
           <li><a href="#">Contact Us</a></li>
@@ -386,5 +393,9 @@
         </div>
       </section>
     </main>
+
+    <footer class="p-4 text-center border-t-2">
+      <p class="font-light">&copy; 2022 by Habibur Rahman. All rights reserved.</p>
+    </footer>
   </body>
 </html>
